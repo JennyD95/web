@@ -1,0 +1,61 @@
+body{
+background-image: url('../images/galaxy.jpg');
+background-size: 100%;
+}
+p{
+    color: white;
+}
+h1{
+    color: rgba(252, 166, 223, 0.534)
+}
+
+.form-message{
+    height:200px
+}
+
+@import url('https://fonts.cdnfonts.com/css/century-schoolbook');
+
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(207, 55, 55);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+  
+
+.blauBtn{
+    background-color: rgb(12, 80, 139); color:
+     white
+}
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 auto;
+    width: 700px;
+    box-shadow: 10px 20px 15px silver;
+	    border-radius: 20px;
+}
+
+.flow{
+    width: 50px;
+    height: 50px;
+}
+
+.sideline{
+border-left: thick solid #000;
+ height:100%;
+ position: absolute;
+    }
+
+
