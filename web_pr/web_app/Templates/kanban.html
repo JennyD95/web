@@ -1,0 +1,37 @@
+{%extends 'projekte.html'%}
+
+{%block projectContent%}
+<div class="kanbanBox"><div></div><div class="kanbanHeader">Kanban-Board </div><div></div>
+<div></div><div class="header1">In Planung</div><div class="header2"> in Arbeit</div><div class="header3">Fertig</div><div></div>
+<div></div> <div class="inPlanungBox">
+    
+    {%for key, value in todosRed.items%}
+     <div class="todoBox1">{{key}}<ul>
+     {% for todo in value%}
+        <li>{{todo.todo}}</li>
+     {% endfor %}
+     </ul>
+    </div>
+     {% endfor %}
+
+    </div>
+      <div class="inArbeitBox"> 
+        {%for key, value in todosYellow.items%}
+     <div class="todoBox2">{{key}}<ul>
+     {% for todo in value%}
+        <li>{{todo.todo}}</li>
+     {% endfor %}
+     </ul>
+    </div>
+     {% endfor %}
+      </div> <div class="fertigBox">
+        {%for key, value in todosGreen.items%}
+     <div class="todoBox3">{{key}}<ul>
+     {% for todo in value%}
+        <li>{{todo.todo}}</li>
+     {% endfor %}
+     </ul>
+    </div>
+     {% endfor %}
+        </div></div></div><div></div>
+{% endblock projectContent %}

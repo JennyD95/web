@@ -1,0 +1,51 @@
+.guestbookGrid{
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 1fr 150px;
+}
+
+.header{
+background-color: aquamarine;
+font-size: xx-large;
+border-radius: 8px;
+width: auto;
+height: auto;
+
+
+}
+
+.discription{
+
+}
+
+.guestbookContainer{
+    
+    height:auto;
+    justify-content: stretch;
+    align-items: center;
+    border-style: solid;
+    border-width: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages{
+    height: auto;
+    background-color: white;
+}
+.messageHeader{
+
+}
+.messageContent{
+
+}
+
+.inputContainer{
+    flex-shrink: 1;
+    border-style: solid;
+    border-width: 10px;
+    height: 150px;
+    width: auto;
+}
+

@@ -1,0 +1,470 @@
+body{
+background-image: url('../images/galaxy.jpg');
+}
+p{
+    color: white;
+}
+
+h1{
+    color: rgba(252, 166, 223, 0.534)
+}
+
+.container1 {
+    width: fit-content;
+    height: fit-content;
+ }
+.boxKontakt{
+    margin-top: 50px;;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 auto;
+    width: 700px;
+    box-shadow: 10px 20px 15px silver;
+	    border-radius: 20px;
+}
+
+.form-message{
+    height:200px
+}
+
+@import url('https://fonts.cdnfonts.com/css/century-schoolbook');
+
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(207, 55, 55);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+.row .row2{
+    width: fit-content;
+}
+
+.box{
+    margin-top:60px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 1 auto;
+    width: 700px;
+    box-shadow: 10px 20px 15px silver;
+	    border-radius: 20px;
+}
+
+.flow{
+    width: 50px;
+    height: 50px;
+}
+
+.sideline{
+border-left: thick solid #000;
+height:100px;
+margin-left: 100px;
+float: left;
+    }
+
+.projectBox{
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 10px 20px 15px rgb(26, 25, 25);
+    border-radius: 5px;
+    border-color: #000;
+    background-color: white;
+    border-style: solid;
+    padding-left: 30px;
+    padding-right: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+
+}
+.projektBoxList{
+    
+    border-style: solid;
+    box-shadow: 10px 20px 15px rgb(26, 25, 25);
+    border-radius: 5px;
+    border-color: #000;
+    border-width: 2px;
+    background-color: white;
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding-top: 15px;
+    color: rgb(169, 35, 129);
+    
+    
+    }
+
+
+.con1{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+ul{ 
+    list-style: none
+
+    }
+
+.alert-warning{
+    background-color: red;
+}
+
+.btn.btn-dif{
+    border-radius: 3px;
+    padding: 3px;
+    background-color: rgb(71, 16, 16);
+    color: rgb(218, 91, 91);
+    
+}
+.btn.btn-dif:after{
+    background-color: rgb(113, 47, 47);
+    border-color: black;
+}
+
+input[type="radio"]:checked + btn-dif {
+    color: red;
+  }
+
+
+.btn:hover .btn-dif{
+    background-color: rgb(113, 47, 47);
+
+}
+
+.btn-dif:active{
+    background-color: rgb(71, 16, 16);
+    color: rgb(218, 91, 91);
+}
+
+.btn-dif:not(:active){
+    background-color: rgb(113, 47, 47);
+    border-color: black;
+}
+
+.btnTest{
+    margin: 5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgb(71, 16, 16);
+    color: rgb(218, 91, 91);
+}
+
+
+
+.btnTest:active{
+    color: azure;
+    box-shadow: 2px 4px 3px black;
+    color: rgb(218, 91, 91);
+}
+.btnTest:hover{
+    color: white;
+}
+
+input[type="radio"]:checked + .btnTest{
+    color: azure;
+    box-shadow: 1px 3px 2px black;
+  }
+
+  .underline{
+    border-bottom: solid;
+    border-width: 3px;
+
+  }
+
+  .ticResultBox{
+    border-style:groove;
+    border-color: rgb(235, 173, 0);
+    border-width: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin-right: 100px;
+    box-shadow: 5px 2px 2px silver;
+
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: flex-start;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 25px;
+  }
+
+  
+
+.ticField{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-items: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.border_left{
+    border-left: solid;
+}
+.border_right{
+    border-right: solid;
+}
+.border_down{
+    border-bottom: solid;
+}
+
+.ticElement{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 60px;
+    cursor:pointer;
+}
+
+.containerTic {
+    display: grid;
+    width:100%;
+    grid-template-columns: 1fr auto 1fr; 
+    grid-template-rows: auto 300px 100px;
+    align-items: center;
+    justify-items: center;
+    gap: 10px 10px;
+    
+
+ }
+
+ .containerBtnsTic{
+    margin-top: 40px;
+    border-radius: 5px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+ }
+
+ #result{
+    grid-column-start: 2;
+    grid-row-start: 1;
+ }
+.resh1{
+    font-size: larger;
+    font-weight: 200;
+    
+    border-bottom: solid;
+    border-width: 3px;
+}
+
+.highscoreBox{
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: #000;
+    box-shadow: 4px 2px 2px silver;
+    background-color: rgba(0, 0, 0, 0.801);
+    font-size: 0.5em;
+    color: yellow;
+    border-width: 2px;
+    justify-content: start;
+    padding: 5px;
+
+}
+
+.snakeList{
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+.snakeBoxOff{
+    margin-left: 50px;
+    background-color: gray;
+    width: 600px;
+    height: 400px;
+    flex-shrink:0;
+    flex-grow:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.snakeBoxOn{
+    margin-left: 50px;
+    border-width: 10px;
+    border-style: solid;
+    background-color: rgb(33, 0, 0);
+    width: 600px;
+    height: 400px;
+    flex-shrink:0;
+    flex-grow:0;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(16, 1fr) ;
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+.field{
+    background-color: rgba(0, 0, 0, 0.405);
+}
+.snake{
+    background-color: green;
+}
+
+.fruit{
+    background-color: red;
+}
+
+.kanbanBox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 10px;
+    grid-template-rows: 70px 30px auto 10px;
+    grid-template-areas: "head head head head head" "side 1head 2head 3head side" "side inPlanung inArbeit fertig side" "footer footer footer footer footer";
+    align-items: stretch;
+    justify-items: stretch;
+    border-style:double;
+    border-color: black;
+    border-width: 10px;
+    gap: 0px 0px;
+
+}
+
+.inPlanungBox{
+    width: 100%;
+    height: auto;
+    font-size: small;
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inArbeitBox{
+
+    width: 100%;
+    height: match-content;
+    font-size: small;
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: #f0f00d0d;
+    border-style: solid;
+    border-color: #f0f00d;
+    border-width: 1px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.fertigBox{
+    width: 100%;
+    height: match-content;
+    font-size: small;
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: rgba(4, 138, 4, 0.032);
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.kanbanHeader{
+    font-family: 'Allerta Stencil';
+    align-self: center;
+    font-size: 1.9em;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-start: 5;
+    grid-area: 1 / 2 / 2 / 5;
+
+}
+
+.header1{
+    height:100%;
+    background-color: rgba(255, 0, 0, 0.311);
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    text-align:center;
+    
+    
+}
+.header2{
+    background-color: #f0f00d45;
+    border-style: solid;
+    border-color: #f0f00d;
+    border-width: 1px;
+    height:100%;
+    text-align:center;
+    
+}
+.header3{
+    height:100%;
+    background-color: rgba(4, 138, 4, 0.187);
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    text-align:center;
+}
+
+.todoBox1{
+
+    margin: 5px;
+    background-color: rgba(255, 0, 0, 0.171);
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px silver;
+}
+.todoBox2{
+    margin: 5px;
+    background-color: #f0f00d0d;
+    border-style: solid;
+    border-color: #f0f00d;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px silver;
+    
+}
+.todoBox3{
+    margin: 5px;
+    background-color: rgba(4, 138, 4, 0.032);
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px silver;
+}

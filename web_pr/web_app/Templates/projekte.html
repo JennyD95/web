@@ -1,0 +1,35 @@
+{%extends 'index.html'%}
+{%block content %}
+
+
+  <div class="row">
+
+<div class="col-2">
+  <div class="projektBoxList">
+<ul>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'kanban'%}">Kanban</a>
+  </li>
+    <li class="nav-item " >
+      <a class="nav-link active" aria-current="page" href="{% url 'tictactoe' %}">TicTacToe</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'snake' %}">Snake</a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link disabled">Disabled</a>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="col-10">
+  <div class="projectBox"> 
+  {%block projectContent%}
+  {% endblock projectContent %}
+</div>
+</div>
+
+  </div>
+{% endblock content %}
+

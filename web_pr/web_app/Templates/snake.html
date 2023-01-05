@@ -1,0 +1,63 @@
+{%extends 'projekte.html'%}
+
+{%block projectContent%}
+
+{%if error%}
+<div class="alert alert-danger"style="width:100% ">
+Der Name darf maximal 9 Zeichen enthalten
+</div>
+{%endif%}
+
+<div class="highscoreBox">
+    
+Bestenliste
+
+
+
+
+<div style=" display:grid; grid-template-columns: 50px auto; column-gap: 20px;">
+    <div>Nr.|Name</div><div>Punkte</div>
+    {%for name, punkte in highscore%}
+
+<div>{{forloop.counter}}. {{name}}</div><div>{{punkte}}</div>
+
+
+{%endfor%}
+
+</div></div>
+
+
+{%if clist%}
+<div id= "box" val= {{status}} class="snakeBoxOn">
+    {% for c in clist%}
+    <div class="field"  name="{{c}}"></div>
+    {%endfor%}
+</div>
+
+{%elif gameover%}
+<div id= "box" val= {{status}} class="snakeBoxOff">
+    <form id="againform"  method="post" action="#">
+        GAME OVER
+        <br>
+    <input id="size" name="size" value= {{size}} hidden>Deine Punktzahl:{{size}}
+        
+        <br>
+    <label for="playerName">Name:</label>
+    <input name= "playerName" id= "playerName" required>
+    <button  type="submit" id="btnSpeichern">Speichern</button>
+    </form>
+</div>
+{%else%}
+<div id="box" val= {{status}} class="snakeBoxOff">
+    <form id="startform"  method="post" action="#">
+    <button id="start" >Start Game</button>
+    </form>
+</div>
+   
+
+{%endif%}
+  {% endblock projectContent %}
+  {%block skript%}
+  {%load static%}
+  <script type="text/javascript" src="{% static 'js/snake.js' %}"> </script>
+  {%endblock skript%}

@@ -1,0 +1,54 @@
+{%extends 'projekte.html'%}
+{%block projectContent%}
+
+
+
+
+<div class="containerTic">
+    <div id="result"></div> 
+<div class="ticResultBox">
+<div class="resh1">Result</div><div>X</div><div>O</div>
+ <div>Gewonnen:</div><div id="gewonnen" value="0">0</div><div id="gewonnenO">0</div> <div>Verloren</div> <div id="verloren">0</div><div id="verlorenO">0</div><div> Unentschieden:</div> <div id="unentschieden">0</div><div id="unentschiedenO">0</div></div>
+
+<div class="ticField">
+<div class="border_right border_down col ticElement" field="0"></div>
+<div class="border_down col ticElement" field="1"></div>
+<div class="border_left border_down col ticElement" field="2"></div>
+
+
+<div class="border_right border_down col ticElement" field="3"></div>
+<div class="border_down col ticElement" field="4"></div>
+<div class="border_left border_down col ticElement" field="5"></div>
+    
+
+<div class="border_right  ticElement col" field="6"></div>
+<div class="col ticElement" field="7"></div>
+<div class="border_left ticElement col" field="8"></div>
+</div>
+
+
+<br><br><br>
+<div class="containerBtnsTic">
+    <div>
+    <input type="radio" class="btn-check" name="options" id="zufall" autocomplete="off" checked >
+    <label class="btnTest" for="zufall">Zufall</label>
+    
+    <input type="radio" class="btn-check" name="options" id="mittel" autocomplete="off">
+    <label class="btnTest" for="mittel">Mittel</label>
+
+    <input type="radio" class="btn-check" name="options" id="unbesiegbar" autocomplete="off" checked >
+    <label class="btnTest" for="unbesiegbar">Unbesiegbar</label>
+
+    <input type="radio" class="btn-check" name="options" id="2-Spieler" autocomplete="off" checked >
+    <label class="btnTest" for="2-Spieler">2-Spieler</label>
+</div>
+    <button id= "start" type="button" class="btn btn-dark">Start</button>
+
+
+</div></div>
+</div>
+{% endblock projectContent %}
+{% block skript%}
+{%load static%}
+<script type="text/javascript" src="{% static 'js/tic.js' %}"> </script>
+{% endblock skript%}
