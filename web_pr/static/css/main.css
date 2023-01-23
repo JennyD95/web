@@ -1,12 +1,24 @@
 body{
-background-image: url('../images/galaxy.jpg');
+background-image: url(../Images/galaxy.jpg);
 }
 p{
     color: white;
 }
 
 h1{
-    color: rgba(252, 166, 223, 0.534)
+    color: rgba(252, 166, 223, 0.534);
+    text-align: center;
+}
+.discriptionBox{
+    background-color: white;
+    border-radius: 10px;
+    margin: 25px;
+    box-shadow: 2px 1px 1px silver;
+    border-style: solid;
+    border-width: 1px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .container1 {
@@ -467,4 +479,223 @@ input[type="radio"]:checked + .btnTest{
     border-width: 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px silver;
+}
+
+.sudokuBtnBox{
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #e4e8e945;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 5px;
+
+}
+
+.sudokuBtn{
+    border-radius: 8px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: violet;
+    margin: 5px;
+    padding: 2px;
+}
+
+.sudokuHighscoreBox{
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    background-color: #00000045;
+    font:white;
+    display:grid;
+    grid-template-columns: auto auto;
+    
+
+}
+.sudokuHighscoreHead{
+
+}
+.abc{
+    
+    display: flex;
+    flex-direction: row;
+}
+.sudokuStartGrid{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.sudokuBtn:Hover{
+    color: white;
+}
+.sudokuGrid{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+.sudokuGrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    width: 200px;
+    height: 200px;
+}
+.sudokuNumberField{
+    font-size: xx-large;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}
+
+.ka{
+    height: 100%;
+}
+.time{
+    width: fit-content;
+    font-size: x-large;
+    height:fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    margin-left: 20px;
+}
+
+.hint{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    border-radius: 8px;
+    margin-left:20px;
+    box-shadow: 1px 1px 1px 1px silver;
+    font-size: x-large;
+
+}
+.hint:Hover{
+    border-style: solid;
+    border-color:aqua;
+    cursor:pointer;
+}
+
+.hint:active{
+    box-shadow: 0px 0px 0px silver;
+
+}
+
+.hintsNumber{ 
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 5px;
+    background-color: rgb(255, 123, 0);
+    color:#ffff86;
+}
+.hintText{
+    text-align: center;
+    padding: 5px;
+
+}
+.hintText:Hover{
+    
+
+    background-color: aliceblue;
+}
+.tryAgainBtn{
+    background-color: black;
+    margin-left:20px;
+    color: white;
+    font-size: x-large;
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+    box-shadow: 2px 2px 2px silver;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    height: fit-content;
+}
+.tryAgainBtn:Active{
+    background-color:yellow;
+
+}
+.tryAgainBtn:Hover{
+    color:aliceblue;
+    background-color:red;
+
+}
+
+.NumberContainer{
+cursor:pointer;
+border-style: solid;
+border-radius: 5px;
+border-color: black;
+margin-bottom:3px;
+margin-left: 5px;
+padding-left:10px;
+padding-right:10px;
+font-size:x-large;
+}
+
+.NumberContainer:Hover{
+    background: aliceblue;
+    border-color:aqua;
+}
+.sudokuMainGrid{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.vertical{
+    display:flex;
+    flex-direction: row;
+}
+.sign{
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.sign:active{
+    border-color: aqua;
+}
+.sign:hover{
+    cursor:pointer;
+    border-color:aqua;
+}
+
+.underline{
+    border-bottom-width: 3px;
+}
+
+.rightLine{
+    border-right-width: 3px;
+}
+
+.redBorder{
+    border-width: 2px;
+    border-color: red;
+}
+.smallNumbersField{
+    height: 6px;
+    font-size: xx-small;
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
 }
