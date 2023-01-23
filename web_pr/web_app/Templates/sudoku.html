@@ -1,0 +1,26 @@
+{%extends 'projekte.html'%}
+{%block projectContent%}
+{%load static%}
+<div class="sudokuMainGrid">
+<div class="vertical"><div class="NumberContainer">1</div><div class="NumberContainer">2</div><div class="NumberContainer">3</div><div class="NumberContainer">4</div><div class="NumberContainer">5</div><div class="NumberContainer">6</div><div class="NumberContainer">7</div><div class="NumberContainer">8</div><div class="NumberContainer">9</div><img class="sign" id="radiergummi" src="{% static 'images/radiergummi.png'%}"><img class="sign" id="arrow" src="{% static 'images/arrow-down.jpg'%}"></div>
+
+<div class="sudokuGrid">
+    {%for column in list%}
+    {%for row in list%}
+<div class="sudokuNumberField" id="{{column}}/{{row}}"><div class= "smallNumbersField" ><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div></div><div class="ka">0</div>
+</div>
+{%endfor%}{%endfor%}
+
+</div>
+<div></div>
+<div class="time" id="time">00:00</div>
+<div class="hint"><div class="hintText">Hints</div><div class= "hintsNumber">3</div></div>
+<button class="tryAgainBtn">Try Again</button>
+<div> 
+</div>
+{%endblock projectContent%}
+
+{%block skript%}
+{%load static%}
+<script type="text/javascript" src="{% static 'js/sudoku.js' %}"> </script>
+{%endblock skript%}
